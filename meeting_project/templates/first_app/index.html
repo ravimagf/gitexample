@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head lang="en">
+  <meta charset="UTF-8">
+    <script type="text/javascript" src="{% static 'JS/serverDate.js' %}"></script>
+
+  </head>
+<body>
+
+  <form>
+    <label><b>Enter you name:</b></label><br>
+    <input type="text" name="message" id="user_input">
+  </form>
+  <br>
+
+  <input type="submit" onclick="showInput();" value="submit"><br/><br>
+  <label>Your name: </label><br>
+  <p><span id='display'></span></p><br>
+  <label>Current time: </label>
+  <p><span id='time'></span></p>
+</body>
+</html>
